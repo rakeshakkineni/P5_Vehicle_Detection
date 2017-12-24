@@ -10,11 +10,14 @@ The goals / steps of this project are the following:
 * As a challange identify both the lanes and vehicles. 
 
 [//]: # (Image References)
-[image1]: ./examples/car_not_car.png
-[image2]: ./examples/HOG_example.jpg
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
+[image1]: ./data/vehicles/image0.jpg
+[image2]: ./data/vehicles/image1.jpg
+[image3]: ./data/non-vehicles/extra3.jpg
+[image4]: ./data/non-vehicles/extra3.jpg
+[image5]: ./output_images/hog_images.jpg
+[image6]: ./output_images/search_window_images.jpg
+[image7]: ./examples/sliding_window.jpg
+[image8]: ./output_images/heat_map_bounding_box.png
 [image6]: ./examples/labels_map.png
 [image7]: ./examples/output_bboxes.png
 [video1]: ./project_video.mp4
@@ -31,14 +34,17 @@ The functions get_hog_features and extract_features are used for this step. Code
 
 I start by reading in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
-![alt text][image1]
+Car | Non Car
+:--------:|:------------:
+![alt text][image1] | ![alt text][image3]
+![alt text][image2] | ![alt text][image4]
 
 I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `skimage.hog()` output looks like.
 
 Here is an example using the `YCrCb` color space and HOG parameters of `orientations=16`, `pixels_per_cell=(8, 8)` and `cells_per_block=(8, 8)`:
 
 
-![alt text][image2]
+![alt text][image5]
 
 I have explored `YUV` and `RGB` color spaces but the results were not proper , so i choose `YCrCb` color space and all the channels were processed. 
 
@@ -89,7 +95,7 @@ I have tried to used HOG sub sampling method but i was not successfull , i did n
 
 I have started the project by using search window size of 64x64 , with this configuration processing time was high , many false targets were seen and even though the cars were identified the resulting window was very small. So i have increase the scale and have strated searching image twice with different scaling. Finally 96x96 and 128x128 scales were selected , as any scales less than these resulted in false targets and smaller boxes.
 
-![alt text][image3]
+![alt text][image6]
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier? 
 
@@ -111,7 +117,7 @@ Pipeline: Pipe line for test image processing is implemented in code cell 11 of 
 
 Here are some example images:
 
-![alt text][image4]
+![alt text][image7]
 ---
 
 ### Video Implementation
@@ -132,7 +138,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 ### Here are six frames and their corresponding heatmaps:
 
-![alt text][image5]
+![alt text][image8]
 
 ---
 
