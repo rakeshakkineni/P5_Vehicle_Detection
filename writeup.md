@@ -16,11 +16,12 @@ The goals / steps of this project are the following:
 [image4]: ./data/non-vehicles/extra3.jpg
 [image5]: ./output_images/hog_images.jpg
 [image6]: ./output_images/search_window_images.jpg
-[image7]: ./examples/sliding_window.jpg
-[image8]: ./output_images/heat_map_bounding_box.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
-[video1]: ./project_video.mp4
+[image7]: ./output_images/test_window0.jpg
+[image8]: ./output_images/test_window2.jpg
+[image9]: ./output_images/heat_map_bounding_box.png
+[image10]: ./examples/labels_map.png
+[image11]: ./examples/output_bboxes.png
+[video1]: ./output_videos/project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -117,7 +118,9 @@ Pipeline: Pipe line for test image processing is implemented in code cell 11 of 
 
 Here are some example images:
 
-![alt text][image7]
+:--------:|:------------:
+![alt text][image7] | ![alt text][image8]
+
 ---
 
 ### Video Implementation
