@@ -21,6 +21,7 @@ The goals / steps of this project are the following:
 [image9]: ./output_images/heat_map_bounding_box.jpg
 
 [video1]: ./output_videos/project_video.mp4
+[video2]: ./output_videos/challenge_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -126,6 +127,7 @@ Here are some example images:
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a [link to my video result](./output_videos/project_video.mp4)
+Here's a [link to challenge video result](./output_videos/challenge_video.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
