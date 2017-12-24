@@ -117,7 +117,7 @@ Pipeline: Pipe line for test image processing is implemented in code cell 11 of 
 
 Here are some example images:
           
-:--------:|:------------:
+ |
 ![alt text][image7] | ![alt text][image8]
 
 ---
