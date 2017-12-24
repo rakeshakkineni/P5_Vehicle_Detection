@@ -18,9 +18,8 @@ The goals / steps of this project are the following:
 [image6]: ./output_images/search_window_images.jpg
 [image7]: ./output_images/test_window0.jpg
 [image8]: ./output_images/test_window2.jpg
-[image9]: ./output_images/heat_map_bounding_box.png
-[image10]: ./examples/labels_map.png
-[image11]: ./examples/output_bboxes.png
+[image9]: ./output_images/heat_map_bounding_box.jpg
+
 [video1]: ./output_videos/project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -117,7 +116,7 @@ Pipeline: Pipe line for test image processing is implemented in code cell 11 of 
 - The boundaries of the red blob are found and these boundaries are used for drawing the box on in the final image.
 
 Here are some example images:
-
+          
 :--------:|:------------:
 ![alt text][image7] | ![alt text][image8]
 
@@ -141,7 +140,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 ### Here are six frames and their corresponding heatmaps:
 
-![alt text][image8]
+![alt text][image9]
 
 ---
 
