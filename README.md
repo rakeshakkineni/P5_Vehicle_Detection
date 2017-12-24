@@ -19,7 +19,8 @@ Following files are used as input , all of them were provided by UDACITY
 Following files are generated.
 - project_video.mp4 stored in output_videos folder
 - Image outputs after different stages stored in output_images folder 
-- challenge.mp4 stored in output_videos folder, this video is combination of 4th and 5th UDACITY projects.
+- challenge_video.mp4 stored in output_videos folder, this video is combination of 4th and 5th UDACITY projects.
 
 ## Project File:
 P5_Vehicle_Detection.ipynb : Jupyter Notebook implementation of the project
+P5_Challange.ipynb : Jupyter Notebook implementation of the challange
